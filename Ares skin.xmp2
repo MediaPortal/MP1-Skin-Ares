@@ -11815,13 +11815,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\README.md</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{7884efa6-6ffd-4ae3-b62c-d51f0b1a8a5e}-README.md</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\README.md</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>Ares\SkinSettings.xml.bak</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{acc74ff8-b651-4c11-9584-bee6b087dfb7}-SkinSettings.xml.bak</ZipFileName>
               <DestinationFilename>%Skin%\Ares\SkinSettings.xml.bak</DestinationFilename>
@@ -23963,13 +23956,6 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <LocalFileName>Ares\Themes\default\theme.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{2b066391-f859-4f3e-8756-bc2cb99ef413}-theme.xml</ZipFileName>
         <DestinationFilename>%Skin%\Ares\Themes\default\theme.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\README.md</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{7884efa6-6ffd-4ae3-b62c-d51f0b1a8a5e}-README.md</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\README.md</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
