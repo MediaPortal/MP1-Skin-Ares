@@ -36,7 +36,7 @@
     <control>
       <description>group element</description>
       <type>group</type>
-	  <visible allowhiddenfocus="true">control.hasfocus(00505)|control.hasfocus(00506)|control.hasfocus(00507)|control.hasfocus(00508)|control.hasfocus(00509)|control.hasfocus(240)|control.hasfocus(241)|control.hasfocus(242)|control.hasfocus(243)|control.hasfocus(244)|control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(340)|control.hasfocus(341)|control.hasfocus(342)|control.hasfocus(343)|control.hasfocus(344)|control.isvisible(5011102)|control.isvisible(5011107)|control.isvisible(5011112)|control.isvisible(5011117)|control.isvisible(5011122)|control.hasfocus(8001122)|control.hasfocus(406)|control.hasfocus(407)|control.hasfocus(408)|control.hasfocus(409)|control.hasfocus(410)|control.hasfocus(606)|control.hasfocus(607)|control.hasfocus(608)|control.hasfocus(609)|control.hasfocus(610)|control.hasfocus(8106555)|control.hasfocus(8105555)|control.hasfocus(8101123)|string.equals(#skin.currentTile,00505)|string.equals(#skin.currentTile,00506)|string.equals(#skin.currentTile,00507)|string.equals(#skin.currentTile,00508)|string.equals(#skin.currentTile,00509)</visible>	  
+	  <visible allowhiddenfocus="true">control.hasfocus(00505)|control.hasfocus(00506)|control.hasfocus(00507)|control.hasfocus(00508)|control.hasfocus(00509)|control.hasfocus(240)|control.hasfocus(241)|control.hasfocus(242)|control.hasfocus(243)|control.hasfocus(244)|control.hasfocus(245)|control.hasfocus(246)|control.hasfocus(247)|control.hasfocus(248)|control.hasfocus(249)|control.hasfocus(340)|control.hasfocus(341)|control.hasfocus(342)|control.hasfocus(343)|control.hasfocus(344)|control.hasfocus(8001122)|control.hasfocus(406)|control.hasfocus(407)|control.hasfocus(408)|control.hasfocus(409)|control.hasfocus(410)|control.hasfocus(606)|control.hasfocus(607)|control.hasfocus(608)|control.hasfocus(609)|control.hasfocus(610)|control.hasfocus(8106555)|control.hasfocus(8105555)|control.hasfocus(8101123)|string.equals(#skin.currentTile,00505)|string.equals(#skin.currentTile,00506)|string.equals(#skin.currentTile,00507)|string.equals(#skin.currentTile,00508)|string.equals(#skin.currentTile,00509)</visible>	  
 	  <control>
         <description>BasicHome btn1</description>
         <type>button</type>
@@ -49,15 +49,16 @@
         <label>#(iif(eq(#skin.tile6cne,'True'),'#tile6plugin.name','#tile6.name'))</label>
 		<oninfo>#(skin.setfocus(35,240))</oninfo>
 		<hyperlink>#tile6.hyperlink</hyperlink>
+		<hyperlinkParameter>#tile6plugin.parameter</hyperlinkParameter>
 		<textcolorNoFocus>ff888888</textcolorNoFocus>
 		<textcolor>ffffffff</textcolor>
 		<textureFocus overlay="">#(iif(eq(#skin.manualimg,'yes'),'btn\focus\focus_#tile6pluginImg.png','btn\focus\focus_#tile6plugin.hyperlink.png'))</textureFocus>
 		<textureNoFocus>#(iif(eq(#skin.manualimg,'yes'),'btn\unfocus\#tile6pluginImg.png','btn\unfocus\#tile6plugin.hyperlink.png'))</textureNoFocus>
 		<textalign>center</textalign>
-		<textYOff>230</textYOff>
+		<textYOff>460</textYOff>
 		<font>font13</font>
         <onleft>00#skin.page2navleft</onleft>
-        <onup>#(cint(switch( and( eq(#tile6plugin.hyperlink,'MovPics'), eq(#latestMediaHandler.movingpicture.latest.enabled,'True')),91919991, and(eq(#tile6plugin.hyperlink,'TVSeries'),eq(#latestMediaHandler.tvseries.latest.enabled,'True')),91919994, and(eq(#tile6plugin.hyperlink,'MyMusic'),eq(#latestMediaHandler.music.latest.enabled,'True')),91919997, and(eq(#tile6plugin.hyperlink,'MyVideo'),eq(#latestMediaHandler.myvideo.latest.enabled,'True')),91915991, and(eq(#tile6plugin.hyperlink,'LiveTV'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile6plugin.hyperlink,'Trakt'),eq(#skin.no.latestmedia,'True')),98302, and(eq(#tile6plugin.hyperlink,'Pictures'),eq(#latestMediaHandler.picture.latest.enabled,'True')),91919971, eq(1,1),21)))</onup>
+        <onup>#(cint(switch( and( eq(#tile6plugin.hyperlink,'MovPics'), eq(#latestMediaHandler.movingpicture.latest.enabled,'True')),91919991, and(eq(#tile6plugin.hyperlink,'TVSeries'),eq(#latestMediaHandler.tvseries.latest.enabled,'True')),91919994, and(eq(#tile6plugin.hyperlink,'MyMusic'),eq(#latestMediaHandler.music.latest.enabled,'True')),91919997, and(eq(#tile6plugin.hyperlink,'MyVideo'),eq(#latestMediaHandler.myvideo.latest.enabled,'True')),91915991, and(eq(#tile6plugin.hyperlink,'LiveTV'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile6plugin.hyperlink,'Recordedtv'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile6plugin.hyperlink,'Trakt'),eq(#skin.no.latestmedia,'True')),98302, and(eq(#tile6plugin.hyperlink,'Pictures'),eq(#latestMediaHandler.picture.latest.enabled,'True')),91919971, eq(1,1),21)))</onup>
 		<ondown>8106555</ondown>
 		<onright>00506</onright>
 		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666004)">Conditional</animation>
@@ -78,15 +79,16 @@
         <label>#(iif(eq(#skin.tile7cne,'True'),'#tile7plugin.name','#tile7.name'))</label>
 		<oninfo>#(skin.setfocus(35,242))</oninfo>
 		<hyperlink>#tile7.hyperlink</hyperlink>
+		<hyperlinkParameter>#tile7plugin.parameter</hyperlinkParameter>
 		<textcolorNoFocus>ff888888</textcolorNoFocus>
 		<textcolor>ffffffff</textcolor>
 		<textureFocus overlay="">#(iif(eq(#skin.manualimg,'yes'),'btn\focus\focus_#tile7pluginImg.png','btn\focus\focus_#tile7plugin.hyperlink.png'))</textureFocus>
 		<textureNoFocus>#(iif(eq(#skin.manualimg,'yes'),'btn\unfocus\#tile7pluginImg.png','btn\unfocus\#tile7plugin.hyperlink.png'))</textureNoFocus>
 		<textalign>center</textalign>
-		<textYOff>230</textYOff>
+		<textYOff>460</textYOff>
 		<font>font13</font>
         <onleft>00505</onleft>
-        <onup>#(cint(switch( and( eq(#tile7plugin.hyperlink,'MovPics'), eq(#latestMediaHandler.movingpicture.latest.enabled,'True')),91919991, and(eq(#tile7plugin.hyperlink,'TVSeries'),eq(#latestMediaHandler.tvseries.latest.enabled,'True')),91919994, and(eq(#tile7plugin.hyperlink,'MyMusic'),eq(#latestMediaHandler.music.latest.enabled,'True')),91919997, and(eq(#tile7plugin.hyperlink,'MyVideo'),eq(#latestMediaHandler.myvideo.latest.enabled,'True')),91915991, and(eq(#tile7plugin.hyperlink,'LiveTV'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile7plugin.hyperlink,'Trakt'),eq(#skin.no.latestmedia,'True')),98302, and(eq(#tile7plugin.hyperlink,'Pictures'),eq(#latestMediaHandler.picture.latest.enabled,'True')),91919971, eq(1,1),21)))</onup>
+        <onup>#(cint(switch( and( eq(#tile7plugin.hyperlink,'MovPics'), eq(#latestMediaHandler.movingpicture.latest.enabled,'True')),91919991, and(eq(#tile7plugin.hyperlink,'TVSeries'),eq(#latestMediaHandler.tvseries.latest.enabled,'True')),91919994, and(eq(#tile7plugin.hyperlink,'MyMusic'),eq(#latestMediaHandler.music.latest.enabled,'True')),91919997, and(eq(#tile7plugin.hyperlink,'MyVideo'),eq(#latestMediaHandler.myvideo.latest.enabled,'True')),91915991, and(eq(#tile7plugin.hyperlink,'LiveTV'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile7plugin.hyperlink,'Recordedtv'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile7plugin.hyperlink,'Trakt'),eq(#skin.no.latestmedia,'True')),98302, and(eq(#tile7plugin.hyperlink,'Pictures'),eq(#latestMediaHandler.picture.latest.enabled,'True')),91919971, eq(1,1),21)))</onup>
 		<ondown>8106555</ondown>
 		<onright>00507</onright>
 		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666004)">Conditional</animation>
@@ -107,15 +109,16 @@
         <label>#(iif(eq(#skin.tile8cne,'True'),'#tile8plugin.name','#tile8.name'))</label>
 		<oninfo>#(skin.setfocus(35,244))</oninfo>
 		<hyperlink>#tile8.hyperlink</hyperlink>
+		<hyperlinkParameter>#tile8plugin.parameter</hyperlinkParameter>
 		<textcolorNoFocus>ff888888</textcolorNoFocus>
 		<textcolor>ffffffff</textcolor>
 		<textureFocus overlay="">#(iif(eq(#skin.manualimg,'yes'),'btn\focus\focus_#tile8pluginImg.png','btn\focus\focus_#tile8plugin.hyperlink.png'))</textureFocus>
 		<textureNoFocus>#(iif(eq(#skin.manualimg,'yes'),'btn\unfocus\#tile8pluginImg.png','btn\unfocus\#tile8plugin.hyperlink.png'))</textureNoFocus>
 		<textalign>center</textalign>
-		<textYOff>230</textYOff>
+		<textYOff>460</textYOff>
 		<font>font13</font>
         <onleft>00506</onleft>
-        <onup>#(cint(switch( and( eq(#tile8plugin.hyperlink,'MovPics'), eq(#latestMediaHandler.movingpicture.latest.enabled,'True')),91919991, and(eq(#tile8plugin.hyperlink,'TVSeries'),eq(#latestMediaHandler.tvseries.latest.enabled,'True')),91919994, and(eq(#tile8plugin.hyperlink,'MyMusic'),eq(#latestMediaHandler.music.latest.enabled,'True')),91919997, and(eq(#tile8plugin.hyperlink,'MyVideo'),eq(#latestMediaHandler.myvideo.latest.enabled,'True')),91915991, and(eq(#tile8plugin.hyperlink,'LiveTV'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile8plugin.hyperlink,'Trakt'),eq(#skin.no.latestmedia,'True')),98302, and(eq(#tile8plugin.hyperlink,'Pictures'),eq(#latestMediaHandler.picture.latest.enabled,'True')),91919971, eq(1,1),21)))</onup>
+        <onup>#(cint(switch( and( eq(#tile8plugin.hyperlink,'MovPics'), eq(#latestMediaHandler.movingpicture.latest.enabled,'True')),91919991, and(eq(#tile8plugin.hyperlink,'TVSeries'),eq(#latestMediaHandler.tvseries.latest.enabled,'True')),91919994, and(eq(#tile8plugin.hyperlink,'MyMusic'),eq(#latestMediaHandler.music.latest.enabled,'True')),91919997, and(eq(#tile8plugin.hyperlink,'MyVideo'),eq(#latestMediaHandler.myvideo.latest.enabled,'True')),91915991, and(eq(#tile8plugin.hyperlink,'LiveTV'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile8plugin.hyperlink,'Recordedtv'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile8plugin.hyperlink,'Trakt'),eq(#skin.no.latestmedia,'True')),98302, and(eq(#tile8plugin.hyperlink,'Pictures'),eq(#latestMediaHandler.picture.latest.enabled,'True')),91919971, eq(1,1),21)))</onup>
 		<ondown>8106555</ondown>
 		<onright>00508</onright>
 		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666004)">Conditional</animation>
@@ -136,15 +139,16 @@
         <label>#(iif(eq(#skin.tile9cne,'True'),'#tile9plugin.name','#tile9.name'))</label>
 		<oninfo>#(skin.setfocus(35,246))</oninfo>
 		<hyperlink>#tile9.hyperlink</hyperlink>
+		<hyperlinkParameter>#tile9plugin.parameter</hyperlinkParameter>
 		<textcolorNoFocus>ff888888</textcolorNoFocus>
 		<textcolor>ffffffff</textcolor>
 		<textureFocus overlay="">#(iif(eq(#skin.manualimg,'yes'),'btn\focus\focus_#tile9pluginImg.png','btn\focus\focus_#tile9plugin.hyperlink.png'))</textureFocus>
 		<textureNoFocus>#(iif(eq(#skin.manualimg,'yes'),'btn\unfocus\#tile9pluginImg.png','btn\unfocus\#tile9plugin.hyperlink.png'))</textureNoFocus>
 		<textalign>center</textalign>
-		<textYOff>230</textYOff>
+		<textYOff>460</textYOff>
 		<font>font13</font>
         <onleft>00507</onleft>
-        <onup>#(cint(switch( and( eq(#tile9plugin.hyperlink,'MovPics'), eq(#latestMediaHandler.movingpicture.latest.enabled,'True')),91919991, and(eq(#tile9plugin.hyperlink,'TVSeries'),eq(#latestMediaHandler.tvseries.latest.enabled,'True')),91919994, and(eq(#tile9plugin.hyperlink,'MyMusic'),eq(#latestMediaHandler.music.latest.enabled,'True')),91919997, and(eq(#tile9plugin.hyperlink,'MyVideo'),eq(#latestMediaHandler.myvideo.latest.enabled,'True')),91915991, and(eq(#tile9plugin.hyperlink,'LiveTV'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile9plugin.hyperlink,'Trakt'),eq(#skin.no.latestmedia,'True')),98302, and(eq(#tile9plugin.hyperlink,'Pictures'),eq(#latestMediaHandler.picture.latest.enabled,'True')),91919971, eq(1,1),21)))</onup>
+        <onup>#(cint(switch( and( eq(#tile9plugin.hyperlink,'MovPics'), eq(#latestMediaHandler.movingpicture.latest.enabled,'True')),91919991, and(eq(#tile9plugin.hyperlink,'TVSeries'),eq(#latestMediaHandler.tvseries.latest.enabled,'True')),91919994, and(eq(#tile9plugin.hyperlink,'MyMusic'),eq(#latestMediaHandler.music.latest.enabled,'True')),91919997, and(eq(#tile9plugin.hyperlink,'MyVideo'),eq(#latestMediaHandler.myvideo.latest.enabled,'True')),91915991, and(eq(#tile9plugin.hyperlink,'LiveTV'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile9plugin.hyperlink,'Recordedtv'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile9plugin.hyperlink,'Trakt'),eq(#skin.no.latestmedia,'True')),98302, and(eq(#tile9plugin.hyperlink,'Pictures'),eq(#latestMediaHandler.picture.latest.enabled,'True')),91919971, eq(1,1),21)))</onup>
 		<ondown>8106555</ondown>
 		<onright>00509</onright>
 		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666004)">Conditional</animation>
@@ -165,15 +169,16 @@
         <label>#(iif(eq(#skin.tile10cne,'True'),'#tile10plugin.name','#tile10.name'))</label>
 		<oninfo>#(skin.setfocus(35,248))</oninfo>
 		<hyperlink>#tile10.hyperlink</hyperlink>
+		<hyperlinkParameter>#tile10plugin.parameter</hyperlinkParameter>
 		<textcolorNoFocus>ff888888</textcolorNoFocus>
 		<textcolor>ffffffff</textcolor>
 		<textureFocus overlay="">#(iif(eq(#skin.manualimg,'yes'),'btn\focus\focus_#tile10pluginImg.png','btn\focus\focus_#tile10plugin.hyperlink.png'))</textureFocus>
 		<textureNoFocus>#(iif(eq(#skin.manualimg,'yes'),'btn\unfocus\#tile10pluginImg.png','btn\unfocus\#tile10plugin.hyperlink.png'))</textureNoFocus>
 		<textalign>center</textalign>
-		<textYOff>230</textYOff>
+		<textYOff>460</textYOff>
 		<font>font13</font>
         <onleft>00508</onleft>
-        <onup>#(cint(switch( and( eq(#tile10plugin.hyperlink,'MovPics'), eq(#latestMediaHandler.movingpicture.latest.enabled,'True')),91919991, and(eq(#tile10plugin.hyperlink,'TVSeries'),eq(#latestMediaHandler.tvseries.latest.enabled,'True')),91919994, and(eq(#tile10plugin.hyperlink,'MyMusic'),eq(#latestMediaHandler.music.latest.enabled,'True')),91919997, and(eq(#tile10plugin.hyperlink,'MyVideo'),eq(#latestMediaHandler.myvideo.latest.enabled,'True')),91915991, and(eq(#tile10plugin.hyperlink,'LiveTV'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile10plugin.hyperlink,'Trakt'),eq(#skin.no.latestmedia,'True')),98302, and(eq(#tile10plugin.hyperlink,'Pictures'),eq(#latestMediaHandler.picture.latest.enabled,'True')),91919971, eq(1,1),21)))</onup>
+        <onup>#(cint(switch( and( eq(#tile10plugin.hyperlink,'MovPics'), eq(#latestMediaHandler.movingpicture.latest.enabled,'True')),91919991, and(eq(#tile10plugin.hyperlink,'TVSeries'),eq(#latestMediaHandler.tvseries.latest.enabled,'True')),91919994, and(eq(#tile10plugin.hyperlink,'MyMusic'),eq(#latestMediaHandler.music.latest.enabled,'True')),91919997, and(eq(#tile10plugin.hyperlink,'MyVideo'),eq(#latestMediaHandler.myvideo.latest.enabled,'True')),91915991, and(eq(#tile10plugin.hyperlink,'LiveTV'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile10plugin.hyperlink,'Recordedtv'),eq(#latestMediaHandler.tvrecordings.latest.enabled,'True')),91919984, and(eq(#tile10plugin.hyperlink,'Trakt'),eq(#skin.no.latestmedia,'True')),98302, and(eq(#tile10plugin.hyperlink,'Pictures'),eq(#latestMediaHandler.picture.latest.enabled,'True')),91919971, eq(1,1),21)))</onup>
 		<ondown>8106555</ondown>
 		<onright>00#skin.page2navright</onright>
 		<animation effect="slide" start="0,0" end="-2500,0" reversible="true" time="350" condition="control.isVisible(666004)">Conditional</animation>
