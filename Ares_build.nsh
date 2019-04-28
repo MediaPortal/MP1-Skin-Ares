@@ -84,23 +84,21 @@
 # INSTALLER ATTRIBUTES
 #---------------------------------------------------------------------------
 !define properskinpath "${AresPath}"
-!define name_output "Ares ${ReleaseVersion}"
-!define Ext_filename "Ares skin.xmp2"   
-!define ReleaseVersion "${VER_MAJOR}.${VER_MINOR}.${VER_REVISION}.${VER_BUILD}"
+!define Ares_nameoutput "Ares_${SkinReleaseVersion}"
+!define Ext_filename "Ares.xmp2"   
+# !define SkinReleaseVersion "${VER_MAJOR}.${VER_MINOR}.${VER_REVISION}.${VER_BUILD}"
 
 #test command
-#!system '"${GIT_ROOT}\mediaportal\MPE\MpeMaker\bin\Release\MpeMaker.exe"  "${AresPath}\${Ext_filename}" /V=0.0.0.3 /B'
+#"!system '"${GIT_ROOT}\mediaportal\MPE\MpeMaker\bin\Release\MpeMaker.exe"  "${properskinpath}\${Ext_filename}" /V=0.0.0.3 /B'
+!system '"${GIT_ROOT}\mediaportal\MPE\MpeMaker\bin\${BUILD_TYPE}\MpeMaker.exe"  "${properskinpath}\${Ext_filename}" /V=${SkinReleaseVersion} /B' = 0 
 
-!system '"${GIT_ROOT}\mediaportal\MPE\MpeMaker\bin\${BUILD_TYPE}\MpeMaker.exe"  "${properskinpath}\${Ext_filename}" /V=${ReleaseVersion} /B' = 0 
+#move the extension installer to Release MP folder. 
+!system 'move "${git_InstallScripts}\Release\${Ares_nameoutput}.mpe1" "${git_OUT}\${Ares_nameoutput}.mpe1"'
 
-#move the extension installer to Ares skin root folder. 
-!system 'move "${git_InstallScripts}\Release\${name_output}.mpe1" "${properskinpath}\Ares.mpe1"'
-
-!undef name_output
 !undef Ext_filename 
-!undef ReleaseVersion
 !undef properskinpath
-
+#!undef Ares_nameoutput
+#!undef SkinReleaseVersion
 
 #---------------------------------------------------------------------------
 # USEFUL MACROS
@@ -113,10 +111,10 @@
 #---------------------------------------------------------------------------
 
 
-  #---------------------------------------------------------------------------
-  # FILTER REGISTRATION
-  #               for more information see:           http://nsis.sourceforge.net/Docs/AppendixB.html
-  #---------------------------------------------------------------------------
+#---------------------------------------------------------------------------
+# FILTER REGISTRATION
+#               for more information see:           http://nsis.sourceforge.net/Docs/AppendixB.html
+#---------------------------------------------------------------------------
 
 
 #---------------------------------------------------------------------------

@@ -15660,23 +15660,23 @@ Click Next to continue or Cancel to exit Setup.</Value>
   <GeneralInfo>
     <Name>Ares</Name>
     <Id>24cd3916-41a8-4622-8c2a-c0b543b57f03</Id>
-    <Author />
+    <Author>Wizard123</Author>
     <HomePage />
     <ForumPage />
-    <UpdateUrl>https://www.dropbox.com/s/t92ws4qjuu8tq2k/Aresupdate.xml?dl=1 [Version]</UpdateUrl>
+    <UpdateUrl>https://raw.githubusercontent.com/MediaPortal/MP1-Skin-Ares/master/Aresupdate.xml</UpdateUrl>
     <Version>
       <Major>1</Major>
-      <Minor>21</Minor>
-      <Build>100</Build>
+      <Minor>22</Minor>
+      <Build>0</Build>
       <Revision>0</Revision>
     </Version>
     <ExtensionDescription />
     <VersionDescription />
     <DevelopmentStatus />
-    <OnlineLocation>https://www.dropbox.com/s/xw7m9abwq9qmnid/Ares.mpe1?dl=1</OnlineLocation>
-    <ReleaseDate>2019-02-27T22:41:33.8559927+01:00</ReleaseDate>
+    <OnlineLocation>https://github.com/MediaPortal/MP1-Skin-Ares/releases/download/[Version]/Ares_[Version].mpe1</OnlineLocation>
+    <ReleaseDate>2019-04-28T11:04:18</ReleaseDate>
     <Tags />
-    <Location>.\Release\Ares [Version].mpe1</Location>
+    <Location>.\Release\Ares_[Version].mpe1</Location>
     <Params>
       <Items>
         <SectionParam Name="Icon">
@@ -31157,7 +31157,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <Recursive>true</Recursive>
       </FolderGroup>
     </FolderGroups>
-    <ProjectFilename>Ares skin.xmp2</ProjectFilename>
+    <ProjectFilename>Ares.xmp2</ProjectFilename>
     <UpdatePath1>.\Aresupdate.xml</UpdatePath1>
     <UpdatePath2 />
     <UpdatePath3 />
