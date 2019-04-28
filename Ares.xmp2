@@ -1497,13 +1497,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\SkinSettings.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d5c18264-f031-4f5c-94a7-242d810d3b22}-SkinSettings.xml</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\SkinSettings.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>Ares\splashscreen.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{7807ce2b-9e74-4b5b-8a46-787b4b3024f1}-splashscreen.xml</ZipFileName>
               <DestinationFilename>%Skin%\Ares\splashscreen.xml</DestinationFilename>
@@ -3943,13 +3936,6 @@
               <LocalFileName>Ares\Media\icon_movies.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{6d2780a9-3f45-4160-b6d5-cb20ee60c5ca}-icon_movies.png</ZipFileName>
               <DestinationFilename>%Skin%\Ares\Media\icon_movies.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\imdb+.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{bb7bc684-ec7f-4fce-9132-690567efb247}-imdb+.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\imdb+.png</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
@@ -10086,132 +10072,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\-12.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{bb03f347-1db1-4764-a49f-0595f34eed4e}--12.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\-12.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\-16.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{caff091e-742b-4f02-b4ec-4907528964bf}--16.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\-16.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\-18.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{1dca089a-6e87-4262-b2f6-4d8e47eba44b}--18.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\-18.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\12.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{240cd73b-1bf1-4172-9c85-8099bbd1f598}-12.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\12.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\12A.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d50be6a5-7d7b-4daa-b0e0-4923b235c261}-12A.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\12A.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\15.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{0f770b6b-b018-45ab-a337-c558998944f4}-15.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\15.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\18.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{011665f8-8cf2-4168-bb5b-ee72e1c011fa}-18.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\18.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\PG-13.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{cd080011-cc4a-49e5-9a88-64cdf3b976ca}-PG-13.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\PG-13.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\PG.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{6f735877-d9b8-4637-b260-5c9122c720f8}-PG.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\PG.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\R.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{c49b9551-1620-4f1a-8a82-c0f37811b02b}-R.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\R13.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{48822830-a11b-4f37-9a4b-aa508a523bb8}-R13.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R13.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\R15+.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{1ac30720-e16a-4c95-b603-8c7e8d64d92e}-R15+.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R15+.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\R15.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{40dfed6f-430c-4ef6-b6aa-17e008247999}-R15.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R15.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\R16.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{a1929777-9001-415a-9fe3-50766faeef7a}-R16.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R16.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\R18+.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{42302f9e-360b-4e90-a442-303edc8d482d}-R18+.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R18+.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\R18.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{bd06c4f6-bb35-4f78-9908-a30604258f7d}-R18.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R18.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\U.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{2a3efeac-cb03-4103-8471-990e30310f0b}-U.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\U.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\Logos\Age\Uc.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{67177843-45e1-4a84-b2c0-45970f6aad01}-Uc.png</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\Logos\Age\Uc.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>Ares\Media\OnlineVideos\Broken.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{1ec00563-e43c-4aa0-8efa-08752e4706ee}-Broken.png</ZipFileName>
               <DestinationFilename>%Skin%\Ares\Media\OnlineVideos\Broken.png</DestinationFilename>
@@ -11811,13 +11671,6 @@
               <LocalFileName>Ares\Themes\default\theme.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{2b066391-f859-4f3e-8756-bc2cb99ef413}-theme.xml</ZipFileName>
               <DestinationFilename>%Skin%\Ares\Themes\default\theme.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\SkinSettings.xml.bak</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{acc74ff8-b651-4c11-9584-bee6b087dfb7}-SkinSettings.xml.bak</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\SkinSettings.xml.bak</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
@@ -15438,6 +15291,7 @@
         </Files>
       </GroupItem>
       <GroupItem Name="Backup_exe">
+        <ParentGroup />
         <DisplayName>Backup_exe</DisplayName>
         <DefaulChecked>true</DefaulChecked>
         <Description>Backup_exe</Description>
@@ -15445,10 +15299,27 @@
           <Items>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
               <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>Backup\AresBackupRestore.exe</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{36f9181a-de1e-426a-83a6-b24acf6aa9a1}-AresBackupRestore.exe</ZipFileName>
               <DestinationFilename>%Base%\AresBackupRestore.exe</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
+      <GroupItem Name="SkinSetting">
+        <ParentGroup>Default</ParentGroup>
+        <DisplayName>SkinSetting</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>SkinSetting</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>NeverOverwrite</UpdateOption>
+              <LocalFileName>SkinSetting\SkinSettings.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{fef02d4b-d0e6-4137-a4eb-d8f2d629cd0e}-SkinSettings.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Ares\SkinSettings.xml</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
@@ -15491,6 +15362,79 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <PanelName>Welcome Screen</PanelName>
         <WizardButtonsEnum>NextCancel</WizardButtonsEnum>
       </SectionItem>
+      <SectionItem Guid="8ce3e679-3671-4f19-88dd-51a6d0763cf3" Name="Install Section" ConditionGroup="">
+        <Params>
+          <Items>
+            <SectionParam Name="Header Title">
+              <Value />
+              <ValueType>String</ValueType>
+              <Description>Header title</Description>
+            </SectionParam>
+            <SectionParam Name="Header description">
+              <Value />
+              <ValueType>String</ValueType>
+              <Description>Description of section, shown in under section title</Description>
+            </SectionParam>
+            <SectionParam Name="Header image">
+              <Value />
+              <ValueType>File</ValueType>
+              <Description>Image in upper right part</Description>
+            </SectionParam>
+          </Items>
+        </Params>
+        <Actions>
+          <Items>
+            <ActionItem Name="RunApplication" ActionType="RunApplication" ConditionGroup="Backup_exe">
+              <Params>
+                <Items>
+                  <SectionParam Name="Path to application">
+                    <Value>%Base%\AresBackupRestore.exe</Value>
+                    <ValueType>Template</ValueType>
+                    <Description>Path to the application like 
+ %Base%\MediaPortal.exe</Description>
+                  </SectionParam>
+                  <SectionParam Name="Parameters for application">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Command line parameters</Description>
+                  </SectionParam>
+                  <SectionParam Name="Wait for exit">
+                    <Value />
+                    <ValueType>Bool</ValueType>
+                    <Description>Wait for exit </Description>
+                  </SectionParam>
+                  <SectionParam Name="Don't run when silent install">
+                    <Value />
+                    <ValueType>Bool</ValueType>
+                    <Description>If set to Yes the aplication don't run when the istalation is silent </Description>
+                  </SectionParam>
+                  <SectionParam Name="Path to uninstall application">
+                    <Value />
+                    <ValueType>Template</ValueType>
+                    <Description>Path to the application which should be executed when uninstall</Description>
+                  </SectionParam>
+                  <SectionParam Name="Parameters for uninstall application">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Command line parameters for uninstall app</Description>
+                  </SectionParam>
+                  <SectionParam Name="Wait for exit on uninstall">
+                    <Value />
+                    <ValueType>Bool</ValueType>
+                    <Description>Wait for exit on uninstall </Description>
+                  </SectionParam>
+                </Items>
+              </Params>
+              <ExecuteLocation>AfterPanelShow</ExecuteLocation>
+            </ActionItem>
+          </Items>
+        </Actions>
+        <IncludedGroups>
+          <string>Backup_exe</string>
+        </IncludedGroups>
+        <PanelName>Install Section</PanelName>
+        <WizardButtonsEnum>Next</WizardButtonsEnum>
+      </SectionItem>
       <SectionItem Guid="efd95c35-bc3e-4cf2-8226-e6051f475f0f" Name="Install Section" ConditionGroup="">
         <Params>
           <Items>
@@ -15519,50 +15463,19 @@ Click Next to continue or Cancel to exit Setup.</Value>
               </Params>
               <ExecuteLocation>AfterPanelShow</ExecuteLocation>
             </ActionItem>
-            <ActionItem Name="RunApplication" ActionType="RunApplication" ConditionGroup="Backup_exe">
-              <Params>
-                <Items>
-                  <SectionParam Name="Path to application">
-                    <Value>%Base%/AresBackupRestore.exe</Value>
-                    <ValueType>Template</ValueType>
-                    <Description>Path to the application like 
- %Base%\MediaPortal.exe</Description>
-                  </SectionParam>
-                  <SectionParam Name="Parameters for application">
-                    <Value />
-                    <ValueType>String</ValueType>
-                    <Description>Command line parameters</Description>
-                  </SectionParam>
-                  <SectionParam Name="Wait for exit">
-                    <Value>NO</Value>
-                    <ValueType>Bool</ValueType>
-                    <Description>Wait for exit </Description>
-                  </SectionParam>
-                  <SectionParam Name="Don't run when silent install">
-                    <Value />
-                    <ValueType>Bool</ValueType>
-                    <Description>If set to Yes the aplication don't run when the istalation is silent </Description>
-                  </SectionParam>
-                  <SectionParam Name="Path to uninstall application">
-                    <Value>%Base%/AresBackupRestore.exe</Value>
-                    <ValueType>Template</ValueType>
-                    <Description>Path to the application which should be executed when uninstall</Description>
-                  </SectionParam>
-                  <SectionParam Name="Parameters for uninstall application">
-                    <Value />
-                    <ValueType>String</ValueType>
-                    <Description>Command line parameters for uninstall app</Description>
-                  </SectionParam>
-                  <SectionParam Name="Wait for exit on uninstall">
-                    <Value />
-                    <ValueType>Bool</ValueType>
-                    <Description>Wait for exit on uninstall </Description>
-                  </SectionParam>
-                </Items>
-              </Params>
-              <ExecuteLocation>BeforPanelShow</ExecuteLocation>
-            </ActionItem>
             <ActionItem Name="ClearSkinCache" ActionType="ClearSkinCache" ConditionGroup="Default">
+              <Params>
+                <Items />
+              </Params>
+              <ExecuteLocation>AfterPanelShow</ExecuteLocation>
+            </ActionItem>
+            <ActionItem Name="InstallFiles" ActionType="InstallFiles" ConditionGroup="Backup_exe">
+              <Params>
+                <Items />
+              </Params>
+              <ExecuteLocation>AfterPanelShow</ExecuteLocation>
+            </ActionItem>
+            <ActionItem Name="InstallFiles" ActionType="InstallFiles" ConditionGroup="SkinSetting">
               <Params>
                 <Items />
               </Params>
@@ -15571,8 +15484,8 @@ Click Next to continue or Cancel to exit Setup.</Value>
           </Items>
         </Actions>
         <IncludedGroups>
-          <string>Backup_exe</string>
           <string>Default</string>
+          <string>SkinSetting</string>
           <string>Font_setup</string>
         </IncludedGroups>
         <PanelName>Install Section</PanelName>
@@ -15673,8 +15586,8 @@ Click Next to continue or Cancel to exit Setup.</Value>
     <ExtensionDescription />
     <VersionDescription />
     <DevelopmentStatus />
-    <OnlineLocation>https://github.com/MediaPortal/MP1-Skin-Ares/releases/download/[Version]/Ares_[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2019-04-28T11:04:18</ReleaseDate>
+    <OnlineLocation>https://github.com/MediaPortal/MP1-Skin-Ares/releases/download/1.22.0.0/Ares_1.22.0.0.mpe1</OnlineLocation>
+    <ReleaseDate>2019-04-28T12:48:19.4581004+02:00</ReleaseDate>
     <Tags />
     <Location>.\Release\Ares_[Version].mpe1</Location>
     <Params>
@@ -17194,13 +17107,6 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <LocalFileName>Ares\settings_tv.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{316c8c85-5443-4659-9c53-c5c22f3c216e}-settings_tv.xml</ZipFileName>
         <DestinationFilename>%Skin%\Ares\settings_tv.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\SkinSettings.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d5c18264-f031-4f5c-94a7-242d810d3b22}-SkinSettings.xml</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\SkinSettings.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -19644,13 +19550,6 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <LocalFileName>Ares\Media\icon_movies.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{6d2780a9-3f45-4160-b6d5-cb20ee60c5ca}-icon_movies.png</ZipFileName>
         <DestinationFilename>%Skin%\Ares\Media\icon_movies.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\imdb+.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{bb7bc684-ec7f-4fce-9132-690567efb247}-imdb+.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\imdb+.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -25787,132 +25686,6 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\-12.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{bb03f347-1db1-4764-a49f-0595f34eed4e}--12.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\-12.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\-16.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{caff091e-742b-4f02-b4ec-4907528964bf}--16.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\-16.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\-18.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{1dca089a-6e87-4262-b2f6-4d8e47eba44b}--18.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\-18.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\12.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{240cd73b-1bf1-4172-9c85-8099bbd1f598}-12.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\12.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\12A.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d50be6a5-7d7b-4daa-b0e0-4923b235c261}-12A.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\12A.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\15.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{0f770b6b-b018-45ab-a337-c558998944f4}-15.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\15.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\18.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{011665f8-8cf2-4168-bb5b-ee72e1c011fa}-18.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\18.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\PG-13.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{cd080011-cc4a-49e5-9a88-64cdf3b976ca}-PG-13.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\PG-13.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\PG.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{6f735877-d9b8-4637-b260-5c9122c720f8}-PG.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\PG.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\R.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{c49b9551-1620-4f1a-8a82-c0f37811b02b}-R.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\R13.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{48822830-a11b-4f37-9a4b-aa508a523bb8}-R13.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R13.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\R15+.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{1ac30720-e16a-4c95-b603-8c7e8d64d92e}-R15+.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R15+.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\R15.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{40dfed6f-430c-4ef6-b6aa-17e008247999}-R15.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R15.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\R16.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{a1929777-9001-415a-9fe3-50766faeef7a}-R16.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R16.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\R18+.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{42302f9e-360b-4e90-a442-303edc8d482d}-R18+.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R18+.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\R18.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{bd06c4f6-bb35-4f78-9908-a30604258f7d}-R18.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\R18.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\U.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{2a3efeac-cb03-4103-8471-990e30310f0b}-U.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\U.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\Logos\Age\Uc.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{67177843-45e1-4a84-b2c0-45970f6aad01}-Uc.png</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\Logos\Age\Uc.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>Ares\Media\OnlineVideos\Broken.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{1ec00563-e43c-4aa0-8efa-08752e4706ee}-Broken.png</ZipFileName>
         <DestinationFilename>%Skin%\Ares\Media\OnlineVideos\Broken.png</DestinationFilename>
@@ -27512,13 +27285,6 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <LocalFileName>Ares\Themes\default\theme.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{2b066391-f859-4f3e-8756-bc2cb99ef413}-theme.xml</ZipFileName>
         <DestinationFilename>%Skin%\Ares\Themes\default\theme.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\SkinSettings.xml.bak</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{acc74ff8-b651-4c11-9584-bee6b087dfb7}-SkinSettings.xml.bak</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\SkinSettings.xml.bak</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -31127,10 +30893,17 @@ Click Next to continue or Cancel to exit Setup.</Value>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
         <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>Backup\AresBackupRestore.exe</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{36f9181a-de1e-426a-83a6-b24acf6aa9a1}-AresBackupRestore.exe</ZipFileName>
         <DestinationFilename>%Base%\AresBackupRestore.exe</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>NeverOverwrite</UpdateOption>
+        <LocalFileName>SkinSetting\SkinSettings.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{fef02d4b-d0e6-4137-a4eb-d8f2d629cd0e}-SkinSettings.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Ares\SkinSettings.xml</DestinationFilename>
       </FileItem>
     </Items>
   </UniqueFileList>
@@ -31154,6 +30927,16 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <DestinationFilename>%Fonts%\</DestinationFilename>
         <Folder>Font</Folder>
         <Group>Font_setup</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>NeverOverwrite</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{4271d18e-9fbe-49b7-a8a6-27cbef0b484a}-</ZipFileName>
+        <DestinationFilename>%Skin%\Ares</DestinationFilename>
+        <Folder>SkinSetting\</Folder>
+        <Group>SkinSetting</Group>
         <Recursive>true</Recursive>
       </FolderGroup>
     </FolderGroups>
