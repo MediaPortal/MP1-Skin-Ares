@@ -15518,7 +15518,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
   </PluginDependencies>
   <GeneralInfo>
     <Name>Ares</Name>
-    <Id>24cd3916-41a8-4622-8c2a-c0b543b57f03</Id>
+    <Id>805a38ec-6dd4-4b2c-9b65-55e680da24cc</Id>
     <Author>Wizard123</Author>
     <HomePage />
     <ForumPage />
@@ -15533,7 +15533,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
     <VersionDescription />
     <DevelopmentStatus />
     <OnlineLocation>https://github.com/MediaPortal/MP1-Skin-Ares/releases/download/[Version]/Ares_[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2019-04-28T19:46:27.8852963+02:00</ReleaseDate>
+    <ReleaseDate>2019-04-28T21:07:42.4658235+02:00</ReleaseDate>
     <Tags />
     <Location>.\Release\Ares_[Version].mpe1</Location>
     <Params>
