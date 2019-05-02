@@ -15273,6 +15273,13 @@
               <ZipFileName>Installer{CopyFile}\{ff81f68f-b451-45ef-9228-dd3f73e0e7b0}-theme.xml</ZipFileName>
               <DestinationFilename>%Skin%\Ares\Themes\default\theme.xml</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>Ares\FilesToBackup.txt</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{0e9a4c6d-95a3-4b32-8cf3-8a61951785da}-FilesToBackup.txt</ZipFileName>
+              <DestinationFilename>%Skin%\Ares\FilesToBackup.txt</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -15429,10 +15436,91 @@ Click Next to continue or Cancel to exit Setup.</Value>
               </Params>
               <ExecuteLocation>AfterPanelHide</ExecuteLocation>
             </ActionItem>
+            <ActionItem Name="Script" ActionType="Script" ConditionGroup="">
+              <Params>
+                <Items>
+                  <SectionParam Name="Script">
+                    <Value>//css_reference "MpeCore.dll";
+
+using MpeCore.Classes;
+using MpeCore;
+
+public class Script
+{
+    public static void Main(PackageClass packageClass, ActionItem actionItem)
+    {
+        return;
+    }
+}
+</Value>
+                    <ValueType>Script</ValueType>
+                    <Description />
+                  </SectionParam>
+                  <SectionParam Name="Uninstall Script">
+                    <Value>//css_reference "MpeCore.dll";
+
+using MpeCore.Classes;
+using MpeCore;
+using System.IO;
+using System;
+using System.Collections.Generic;
+
+// https://stackoverflow.com/questions/1835578/c-sharp-copying-multiple-files-with-wildcards-and-keeping-file-names
+public class Script
+{
+ static String SkinName = "Ares";
+ static String SourceFilePath = Path.Combine(MpeInstaller.TransformInRealPath("%Skin%"), SkinName);
+ static String BackupPath = Path.Combine(MpeInstaller.TransformInRealPath("%Config%"), "BackupSkin", SkinName);
+
+    public static void Main(PackageClass packageClass, UnInstallItem item)
+  {
+    DirectoryInfo src = new DirectoryInfo(SourceFilePath);
+    DirectoryInfo dst = new DirectoryInfo(BackupPath);
+
+    /*
+     * FilesToBackup.txt
+     *     SkinSettings.xml
+     *     
+     */
+    CopyFiles(src, dst, true);
+    return;
+
+  }
+
+  static void CopyFiles(DirectoryInfo source, DirectoryInfo destination, bool overwrite)
+  {
+    List&lt;FileInfo&gt; files = new List&lt;FileInfo&gt;();
+
+    string[] fileNames = File.ReadAllLines(Path.Combine(SourceFilePath, "FilesToBackup.txt"));
+
+    foreach (string f in fileNames)
+    {
+      files.AddRange(source.GetFiles(f));
+    }
+
+    if (!destination.Exists)
+      destination.Create();
+
+    foreach (FileInfo file in files)
+    {
+      file.CopyTo(destination.FullName + @"\" + file.Name, overwrite);
+    }
+  }
+}
+</Value>
+                    <ValueType>Script</ValueType>
+                    <Description />
+                  </SectionParam>
+                </Items>
+              </Params>
+              <ExecuteLocation>BeforPanelShow</ExecuteLocation>
+            </ActionItem>
           </Items>
         </Actions>
         <IncludedGroups>
           <string>Backup</string>
+          <string>SkinFiles</string>
+          <string>FontSetup</string>
         </IncludedGroups>
         <PanelName>Install Section</PanelName>
         <WizardButtonsEnum>Next</WizardButtonsEnum>
@@ -15531,7 +15619,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
     </Version>
     <ExtensionDescription />
     <VersionDescription />
-    <DevelopmentStatus />
+    <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/MediaPortal/MP1-Skin-Ares/releases/download/[Version]/Ares_[Version].mpe1</OnlineLocation>
     <ReleaseDate>2019-04-28T21:07:42.4658235+02:00</ReleaseDate>
     <Tags />
@@ -30822,6 +30910,13 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <LocalFileName>Ares\Themes\default\theme.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{ff81f68f-b451-45ef-9228-dd3f73e0e7b0}-theme.xml</ZipFileName>
         <DestinationFilename>%Skin%\Ares\Themes\default\theme.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>Ares\FilesToBackup.txt</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{0e9a4c6d-95a3-4b32-8cf3-8a61951785da}-FilesToBackup.txt</ZipFileName>
+        <DestinationFilename>%Skin%\Ares\FilesToBackup.txt</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFont" SystemFile="false" Modified="false">
         <Param1 />
