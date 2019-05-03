@@ -15321,6 +15321,22 @@
           </Items>
         </Files>
       </GroupItem>
+      <GroupItem Name="Plugin">
+        <DisplayName>Plugin</DisplayName>
+        <DefaulChecked>true</DefaulChecked>
+        <Description>Plugin</Description>
+        <Files>
+          <Items>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>Plugin\AresPlugin.dll</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{4ac19051-09fe-4886-bde3-d1dc5c7b185d}-AresPlugin.dll</ZipFileName>
+              <DestinationFilename>%Plugins%\process\AresPlugin.dll</DestinationFilename>
+            </FileItem>
+          </Items>
+        </Files>
+      </GroupItem>
     </Items>
   </Groups>
   <Sections>
@@ -15602,7 +15618,24 @@ public class Script
     </Items>
   </Dependencies>
   <PluginDependencies>
-    <Items />
+    <Items>
+      <PluginDependencyItem AssemblyName="AresPlugin.dll">
+        <CompatibleVersion>
+          <Items>
+            <CompatibleVersionItem>
+              <MinRequiredVersion>1.1.6.27644</MinRequiredVersion>
+              <DesignedForVersion>1.3.100.0</DesignedForVersion>
+            </CompatibleVersionItem>
+          </Items>
+        </CompatibleVersion>
+        <SubSystemsUsed>
+          <Items>
+            <SubSystemItem Name="MP.Config" />
+            <SubSystemItem Name="MP.SkinEngine" />
+          </Items>
+        </SubSystemsUsed>
+      </PluginDependencyItem>
+    </Items>
   </PluginDependencies>
   <GeneralInfo>
     <Name>Ares</Name>
@@ -30946,6 +30979,13 @@ public class Script
         <ZipFileName>Installer{Font}\{4181423b-d765-47b8-a414-4d2f5013f790}-MediaPortalDefault.ttf</ZipFileName>
         <DestinationFilename>%Fonts%\MediaPortalDefault.ttf</DestinationFilename>
       </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>Plugin\AresPlugin.dll</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{4ac19051-09fe-4886-bde3-d1dc5c7b185d}-AresPlugin.dll</ZipFileName>
+        <DestinationFilename>%Plugins%\process\AresPlugin.dll</DestinationFilename>
+      </FileItem>
     </Items>
   </UniqueFileList>
   <ProjectSettings>
@@ -30978,6 +31018,16 @@ public class Script
         <DestinationFilename>%Fonts%\</DestinationFilename>
         <Folder>Font\</Folder>
         <Group>FontSetup</Group>
+        <Recursive>true</Recursive>
+      </FolderGroup>
+      <FolderGroup InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName />
+        <ZipFileName>Installer{CopyFile}\{5226edbb-b120-41ac-a1e4-add914760a81}-</ZipFileName>
+        <DestinationFilename>%Plugins%\process\</DestinationFilename>
+        <Folder>Plugin\</Folder>
+        <Group>Plugin</Group>
         <Recursive>true</Recursive>
       </FolderGroup>
     </FolderGroups>
