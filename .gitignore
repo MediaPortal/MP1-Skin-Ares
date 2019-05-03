@@ -1,2 +1,13 @@
-/*.mpe1
-/Release/*
+[B|b]in
+obj
+*.log
+*.suo
+*.sln.cache
+*.resharper
+*.user
+_ReSharper.*
+/Release
+Thumbs.db
+*.bak
+*.mpe1
+.vs/
