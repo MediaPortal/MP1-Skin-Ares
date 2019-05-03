@@ -21,17 +21,33 @@ namespace Backup
       FileInfo fileInfo3B = new FileInfo("C:\\ProgramData\\Team MediaPortal\\MediaPortal\\BackupSkin\\Ares\\AresSettingsBak.xml");
       string LogFile = "C:\\ProgramData\\Team MediaPortal\\MediaPortal\\log\\AresBackupRestore.log";
 
-      // Copy old backup to new backup folder, if doesn't exist
+      // Copy old backup to new backup folder, if doesn't exist (compar if AresSettingsBak (created by Aresplugin.dll ) is more recent )
       if (fileInfo3A.Exists && !fileInfo1.Exists)
       {
-        File.Copy(Convert.ToString(fileInfo3A), Convert.ToString(fileInfo1));
-        File.Move(Convert.ToString(fileInfo3A), Convert.ToString(fileInfo3B));
+        File.Copy(Convert.ToString(fileInfo3A), Convert.ToString(fileInfo1), true);
+        File.Copy(Convert.ToString(fileInfo3A), Convert.ToString(fileInfo3B), true);
+        File.Delete(Convert.ToString(fileInfo3A));
         DateTime utcNow = DateTime.UtcNow;
         string str1 = "     No Found skinsettings backup file in 'C:\\ProgramData\\Team MediaPortal\\MediaPortal\\BackupSkin\\Ares\' ";
         string str2 = "     Found old skin backup to 'C:\\ProgramData\\Team MediaPortal\\MediaPortal\\' - File copied and renamed to BackupSkin folder ";
-        string str3 = "    --------------------------------------------------------------------------------------------------------------------------------\r\n";
+        string str3 = "    --------------------------------------------------------------------------------------------------------------------------------";
         StreamWriter streamWriter1 = new StreamWriter(LogFile, true);
-        streamWriter1.WriteLine("\r\n" + (object)utcNow + str3 + "\r\n" + (object)utcNow + str1 + (object)utcNow + str2 + (object)utcNow + str3);
+        streamWriter1.WriteLine("\r\n" + (object)utcNow + str3 + "\r\n" + (object)utcNow + str1 + "\r\n" + (object)utcNow + str2 + "\r\n" + (object)utcNow + str3 + "\r\n");
+        streamWriter1.Close();
+      }
+
+      // Copy old backup to new backup folder, if doesn't exist (compar if AresSettingsBak (created by Aresplugin.dll ) is more recent )
+      if (fileInfo3A.CreationTime > fileInfo3B.CreationTime)
+      {
+        File.Copy(Convert.ToString(fileInfo3A), Convert.ToString(fileInfo1), true);
+        File.Copy(Convert.ToString(fileInfo3A), Convert.ToString(fileInfo3B), true);
+        File.Delete(Convert.ToString(fileInfo3A));
+        DateTime utcNow = DateTime.UtcNow;
+        string str1 = "     Skinsettings backup file found in 'C:\\ProgramData\\Team MediaPortal\\MediaPortal\\' is more recent than present backup file ";
+        string str2 = "     it will overwrite all backup files present in 'C:\\ProgramData\\Team MediaPortal\\MediaPortal\\BackupSkin\\Ares\'";
+        string str3 = "    --------------------------------------------------------------------------------------------------------------------------------";
+        StreamWriter streamWriter1 = new StreamWriter(LogFile, true);
+        streamWriter1.WriteLine("\r\n" + (object)utcNow + str3 + "\r\n" + (object)utcNow + str1 + "\r\n" + (object)utcNow + str2 + "\r\n" + (object)utcNow + str3 + "\r\n");
         streamWriter1.Close();
       }
 
@@ -43,11 +59,11 @@ namespace Backup
         XmlDocument xmlDocument2 = new XmlDocument();
         xmlDocument2.Load(Convert.ToString(fileInfo2));
         DateTime utcNow = DateTime.UtcNow;
-        string str1 = "    Found skinsettings backup file in 'C:\\ProgramData\\Team MediaPortal\\MediaPortal\\BackupSkin\\Ares\' so will use that to restore settings from.\r\n\r\n";
-        string str2 = "    Start Ares skin settings restore from backed up file..\r\n\r\n";
-        string str3 = "    --------------------------------------------------------------------------------------------------------------------------------\r\n";
+        string str1 = "    Found skinsettings backup file in 'C:\\ProgramData\\Team MediaPortal\\MediaPortal\\BackupSkin\\Ares\' so will use that to restore settings from.";
+        string str2 = "    Start Ares skin settings restore from backed up file.";
+        string str3 = "    --------------------------------------------------------------------------------------------------------------------------------";
         StreamWriter streamWriter1 = new StreamWriter(LogFile, true);
-        streamWriter1.WriteLine("\r\n" + (object) utcNow + str3 + "\r\n" + (object) utcNow + str2 + (object) utcNow + str1 + (object) utcNow + str3);
+        streamWriter1.WriteLine("\r\n" + (object) utcNow + str3 + "\r\n" + (object) utcNow + str2 + "\r\n" + (object) utcNow + str1 + "\r\n" + (object) utcNow + str3 + "\r\n");
         streamWriter1.Close();
         List<string> stringList = new List<string>();
         foreach (XmlNode xmlNode in xmlDocument1.GetElementsByTagName("entry"))
@@ -74,13 +90,13 @@ namespace Backup
             XmlNode xmlNode = xmlDocument1.SelectSingleNode("//entry[@name='" + str4 + "']");
             xmlDocument2.SelectSingleNode("//entry[@name='" + str4 + "']").InnerText = xmlNode.InnerText;
             StreamWriter streamWriter2 = new StreamWriter(LogFile, true);
-            streamWriter2.WriteLine(utcNow.ToString() + "    " + str4 + " Updated with " + xmlNode.InnerText + "\r\n");
+            streamWriter2.WriteLine(utcNow.ToString() + "    " + str4 + " Updated with " + xmlNode.InnerText);
             streamWriter2.Close();
           }
           catch
           {
             StreamWriter streamWriter2 = new StreamWriter(LogFile, true);
-            streamWriter2.WriteLine(utcNow.ToString() + "    " + str4 + " does not exist skipping and using default !..\r\n");
+            streamWriter2.WriteLine(utcNow.ToString() + "    " + str4 + " does not exist skipping and using default !");
             streamWriter2.Close();
           }
         }
@@ -89,9 +105,10 @@ namespace Backup
       else
       {
         DateTime utcNow = DateTime.UtcNow;
-        string str = "    Unable to find a backup file to restore from, default skin settings will be used.\r\n";
+        string str1 = "    Unable to find a backup file to restore from, default skin settings will be used.";
+        string str2 = "    Unable to find a backup file to restore from, default skin settings will be used.";
         StreamWriter streamWriter = new StreamWriter(LogFile, true);
-        streamWriter.WriteLine(utcNow.ToString() + str);
+        streamWriter.WriteLine(utcNow.ToString() + str1 + "\r\n" + str2 + "\r\n");
         streamWriter.Close();
         Environment.Exit(0);
       }
