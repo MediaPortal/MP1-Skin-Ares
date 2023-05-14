@@ -2893,13 +2893,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>Ares\Media\68E09040</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{db29e145-70e5-4739-b7c7-c84a2aa14deb}-68E09040</ZipFileName>
-              <DestinationFilename>%Skin%\Ares\Media\68E09040</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>Ares\Media\a.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{88dd50a2-cc1e-4a16-a192-e86df2127703}-a.png</ZipFileName>
               <DestinationFilename>%Skin%\Ares\Media\a.png</DestinationFilename>
@@ -15280,6 +15273,20 @@
               <ZipFileName>Installer{CopyFile}\{0e9a4c6d-95a3-4b32-8cf3-8a61951785da}-FilesToBackup.txt</ZipFileName>
               <DestinationFilename>%Skin%\Ares\FilesToBackup.txt</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>Ares\SkinSettings.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{4537bf3c-5d89-4f8c-8a04-ebfc87ddb3ce}-SkinSettings.xml</ZipFileName>
+              <DestinationFilename>%Skin%\Ares\SkinSettings.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>Ares\Media\Logos\opus.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{ce86f04b-a748-4742-b58a-f27b191a3e1c}-opus.png</ZipFileName>
+              <DestinationFilename>%Skin%\Ares\Media\Logos\opus.png</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -15646,15 +15653,15 @@ public class Script
     <UpdateUrl>https://raw.githubusercontent.com/MediaPortal/MP1-Skin-Ares/master/Aresupdate.xml</UpdateUrl>
     <Version>
       <Major>1</Major>
-      <Minor>22</Minor>
-      <Build>0</Build>
+      <Minor>0</Minor>
+      <Build>11</Build>
       <Revision>0</Revision>
     </Version>
-    <ExtensionDescription />
-    <VersionDescription />
+    <ExtensionDescription>Ares Theme for Titan skin</ExtensionDescription>
+    <VersionDescription>Update from MP</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
-    <OnlineLocation>https://github.com/MediaPortal/MP1-Skin-Ares/releases/download/[Version]/Ares_[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2019-04-28T21:07:42.4658235+02:00</ReleaseDate>
+    <OnlineLocation>https://github.com/MediaPortal/MP1-Skin-Ares/releases/download/1.0.11.0/Ares_1.0.11.0.mpe1</OnlineLocation>
+    <ReleaseDate>2023-05-14T22:07:42</ReleaseDate>
     <Tags />
     <Location>.\Release\Ares_[Version].mpe1</Location>
     <Params>
@@ -18560,13 +18567,6 @@ public class Script
         <LocalFileName>Ares\custom\Allscreens\user_dialog.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{93715869-8c13-4bfd-94f8-abd057eb1072}-user_dialog.xml</ZipFileName>
         <DestinationFilename>%Skin%\Ares\custom\Allscreens\user_dialog.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>Ares\Media\68E09040</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{db29e145-70e5-4739-b7c7-c84a2aa14deb}-68E09040</ZipFileName>
-        <DestinationFilename>%Skin%\Ares\Media\68E09040</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -30950,6 +30950,20 @@ public class Script
         <LocalFileName>Ares\FilesToBackup.txt</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{0e9a4c6d-95a3-4b32-8cf3-8a61951785da}-FilesToBackup.txt</ZipFileName>
         <DestinationFilename>%Skin%\Ares\FilesToBackup.txt</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>Ares\SkinSettings.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{4537bf3c-5d89-4f8c-8a04-ebfc87ddb3ce}-SkinSettings.xml</ZipFileName>
+        <DestinationFilename>%Skin%\Ares\SkinSettings.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>Ares\Media\Logos\opus.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{ce86f04b-a748-4742-b58a-f27b191a3e1c}-opus.png</ZipFileName>
+        <DestinationFilename>%Skin%\Ares\Media\Logos\opus.png</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFont" SystemFile="false" Modified="false">
         <Param1 />
