@@ -15650,7 +15650,7 @@ public class Script
     <Author>Wizard123</Author>
     <HomePage />
     <ForumPage />
-    <UpdateUrl>https://raw.githubusercontent.com/MediaPortal/MP1-Skin-Ares/master/Aresupdate.xml</UpdateUrl>
+    <UpdateUrl>https://www.team-mediaportal.com/index.php?option=com_mtree&amp;task=att_download&amp;link_id=363&amp;cf_id=52</UpdateUrl>
     <Version>
       <Major>1</Major>
       <Minor>0</Minor>
@@ -15660,7 +15660,7 @@ public class Script
     <ExtensionDescription>Ares Theme for Titan skin</ExtensionDescription>
     <VersionDescription>Update from MP</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
-    <OnlineLocation>https://github.com/MediaPortal/MP1-Skin-Ares/releases/download/1.0.11.0/Ares_1.0.11.0.mpe1</OnlineLocation>
+    <OnlineLocation>https://www.team-mediaportal.com/index.php?option=com_mtree&amp;task=att_download&amp;link_id=363&amp;cf_id=24</OnlineLocation>
     <ReleaseDate>2023-05-14T22:07:42</ReleaseDate>
     <Tags />
     <Location>.\Release\Ares_[Version].mpe1</Location>
@@ -31046,7 +31046,7 @@ public class Script
       </FolderGroup>
     </FolderGroups>
     <ProjectFilename>Ares.xmp2</ProjectFilename>
-    <UpdatePath1>.\Aresupdate.xml</UpdatePath1>
+    <UpdatePath1>.\AresUpdate.xml</UpdatePath1>
     <UpdatePath2 />
     <UpdatePath3 />
   </ProjectSettings>
